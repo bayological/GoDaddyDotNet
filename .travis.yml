@@ -1,0 +1,12 @@
+language: csharp
+mono: none
+solution: GoDaddyDotNet.sln 
+
+dotnet: 2.1.0
+
+install:
+ - dotnet restore
+ 
+script:
+ - dotnet build
+ - dotnet test GoDaddyDotNet.IntegrationTests/GoDaddyDotNet.IntegrationTests.csproj
