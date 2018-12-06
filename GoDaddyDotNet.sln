@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoDaddyDotNet", "GoDaddyDotNet\GoDaddyDotNet.csproj", "{38E2DAA0-ED39-48F2-B420-7D691E538FE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoDaddyDotNet", "GoDaddyDotNet\GoDaddyDotNet.csproj", "{38E2DAA0-ED39-48F2-B420-7D691E538FE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoDaddyDotNet.IntegrationTests", "..\GoDaddyDotNet.IntegrationTests\GoDaddyDotNet.IntegrationTests.csproj", "{041CCE44-500E-41DE-9AC6-CC50B0CB5BF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoDaddyDotNet.IntegrationTests", "GoDaddyDotNet.IntegrationTests\GoDaddyDotNet.IntegrationTests.csproj", "{78A28933-0784-4B95-998D-A0E444E2EAF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{38E2DAA0-ED39-48F2-B420-7D691E538FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38E2DAA0-ED39-48F2-B420-7D691E538FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38E2DAA0-ED39-48F2-B420-7D691E538FE4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{041CCE44-500E-41DE-9AC6-CC50B0CB5BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{041CCE44-500E-41DE-9AC6-CC50B0CB5BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{041CCE44-500E-41DE-9AC6-CC50B0CB5BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{041CCE44-500E-41DE-9AC6-CC50B0CB5BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A28933-0784-4B95-998D-A0E444E2EAF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A28933-0784-4B95-998D-A0E444E2EAF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A28933-0784-4B95-998D-A0E444E2EAF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A28933-0784-4B95-998D-A0E444E2EAF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
