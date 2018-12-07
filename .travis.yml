@@ -15,4 +15,4 @@ script:
  deploy:
   skip_cleanup: true
   provider: script
-  script: dotnet nuget push /home/travis/build/bayological/GoDaddyDotNet/GoDaddyDotNet/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org 
+  script: dotnet nuget push /home/travis/build/bayological/GoDaddyDotNet/GoDaddyDotNet/bin/release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org 
