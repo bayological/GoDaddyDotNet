@@ -2,6 +2,7 @@ using GoDaddyDotNet.Helpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Threading.Tasks;
 
 namespace GoDaddyDotNet.IntegrationTests
@@ -14,12 +15,12 @@ namespace GoDaddyDotNet.IntegrationTests
 		[TestInitialize]
 		public void Init()
 		{
-			var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+			var config = new ConfigurationBuilder().AddEnvironmentVariables();
 			GoDaddySettings settings = new GoDaddySettings()
 			{
-				ApiUrl = config["GoDaddySettings:ApiUrl"],
-				ApiKey = config["GoDaddySettings:ApiKey"],
-				ApiSecret = config["GoDaddySettings:ApiSecret"]
+				ApiUrl = Environment.GetEnvironmentVariable("GoDaddySettings_ApiUrl"),
+				ApiKey = Environment.GetEnvironmentVariable("GoDaddySettings_ApiKey"),
+				ApiSecret = Environment.GetEnvironmentVariable("GoDaddySettings_ApiSecret")
 			};
 			IOptions<GoDaddySettings> options = Options.Create(settings);
 			_testee = new GoDaddyClient(options);

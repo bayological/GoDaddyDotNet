@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "GoDaddyDotNet.IntegrationTests": {
+      "commandName": "Project"
+    }
+  }
+}
