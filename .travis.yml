@@ -10,5 +10,5 @@ install:
 script:
  - dotnet build
  - dotnet test GoDaddyDotNet.IntegrationTests/GoDaddyDotNet.IntegrationTests.csproj
- - dotnet pack GoDaddyDotNet/GoDaddyDotNet.csproj --output GoDaddyDotNet
- - dotnet nuget push GoDaddyDotNet/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org 
+ - dotnet pack GoDaddyDotNet/GoDaddyDotNet.csproj --version-suffix -Version $MAJOR_VERSION_NUMBER.$MINOR_VERSION_NUMBER.$TRAVIS_BUILD_NUMBER
+ - dotnet nuget push <Project Name>.$MAJOR_VERSION_NUMBER.$MINOR_VERSION_NUMBER.$TRAVIS_BUILD_NUMBER.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org 
