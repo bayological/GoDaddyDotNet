@@ -11,8 +11,4 @@ script:
  - dotnet build
  - dotnet test GoDaddyDotNet.IntegrationTests/GoDaddyDotNet.IntegrationTests.csproj
  - dotnet pack GoDaddyDotNet/GoDaddyDotNet.csproj -c release
- 
- deploy:
-  skip_cleanup: true
-  provider: script
-  script: dotnet nuget push /home/travis/build/bayological/GoDaddyDotNet/GoDaddyDotNet/bin/release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org 
+ - dotnet nuget push /home/travis/build/bayological/GoDaddyDotNet/GoDaddyDotNet/bin/release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org 
