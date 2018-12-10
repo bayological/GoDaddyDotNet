@@ -3,6 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
      <Version>1.0.0-alpha</Version>
+     <PackageProjectUrl>https://github.com/bayological/GoDaddyDotNet</PackageProjectUrl>
+     <PackageIconUrl></PackageIconUrl>
+     <Description>GoDaddyDotNet is a .NET core client for the GoDaddy API.</Description>
+     <RepositoryUrl>https://github.com/bayological/GoDaddyDotNet</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
