@@ -28,7 +28,7 @@ namespace GoDaddyDotNet.IntegrationTests
 		[TestMethod]
 		public async Task CheckDomain_ShouldReturnFalse()
 		{
-			var result = await _testee.CheckDomainAsync("bayological.io").ConfigureAwait(false);
+			var result = await _testee.CheckDomainAsync("google.com").ConfigureAwait(false);
 			Assert.IsFalse(result.Available);
 		}
 	}
