@@ -1,5 +1,4 @@
-﻿using GoDaddyDotNet.Helpers;
-using GoDaddyDotNet.Responses;
+﻿using GoDaddyDotNet.Responses;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using System;
@@ -22,10 +21,8 @@ namespace GoDaddyDotNet
 
 		public async Task<CheckDomainResponse> CheckDomainAsync(string domainName)
 		{
-			var response = new CheckDomainResponse();
-
-			var request = GetRequest($"domains/available?domain={domainName}&checkType=full", HttpMethod.Get);
-
+			var response = new CheckDomainResponse(); 
+			var request = GetRequest($"domains/available?domain={domainName}&checkType=full", HttpMethod.Get); 
 			var result = await _client.SendAsync(request).ConfigureAwait(false);
 
 			if (result.IsSuccessStatusCode)

@@ -1,4 +1,3 @@
-using GoDaddyDotNet.Helpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
