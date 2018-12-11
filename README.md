@@ -1,6 +1,6 @@
 # GoDaddyDotNet 
 [![Build Status](https://travis-ci.org/bayological/GoDaddyDotNet.svg?branch=master)](https://travis-ci.org/bayological/GoDaddyDotNet)
-[![NuGet Version](https://badge.fury.io/nu/GoDaddyDotNet.svg)](https://badge.fury.io/nu/GoDaddyDotNet)
+[![nuget](https://img.shields.io/nuget/vpre/GoDaddyDotNet.svg)](https://www.nuget.org/packages/GoDaddyDotNet)
 
 .Net Core GoDaddy Api Client Library
 
